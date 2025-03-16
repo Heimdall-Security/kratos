@@ -52,12 +52,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Download Heimdall Bifrost Artifact
+      - name: Download Heimdall kratos Artifact
         uses: actions/download-artifact@v4
         id: download-artifact
         with:
-          name: bifrost.jar
-          path: build/libs/bifrost.jar
+          name: kratos.jar
+          path: build/libs/kratos.jar
       - name: Downloaded Artifact Path
         run: echo ${{ steps.download-artifact.outputs.download-path }}
       - name: Login to Github Container Registry
